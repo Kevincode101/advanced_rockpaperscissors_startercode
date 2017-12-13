@@ -15,17 +15,20 @@
         // Clear the input box for the next choice
 
 /* Returns a random integer between a and b, inclusive. */
-function randomInt(a, b) {
-  if (!(Number.isInteger(a) && Number.isInteger(b))) {
-    throw "a and b must both be integers";
-  } else if (b < a) {
-    throw "b must be greater than or equal to a";
-  }
-  return a + Math.floor(Math.random() * (b+1-a));
-}
+// function randomInt(a, b) {
+//   if (!(Number.isInteger(a) && Number.isInteger(b))) {
+//     throw "a and b must both be integers";
+//   } else if (b < a) {
+//     throw "b must be greater than or equal to a";
+//   }
+//   return a + Math.floor(Math.random() * (b+1-a));
+// }
+var RpslsOptions = ["rock","paper","scissors","lizard","spock"]
+var index = Math.floor(Math.random()*RpslsOptions.length);
 
 // *************************** YOUR CODE BELOW *******************************
 //******************TEST EARLY AND OFTEN USING console.log() ******************
+console.log(RpslsOptions[index]);
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
